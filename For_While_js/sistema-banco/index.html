@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema Bancario</h1>
+    <div>
+        <h2 id="saldo">Saldo Atual:</h2>
+    </div>
+
+    <div>
+        <p>Selecione uma oprecação: </p>
+        <select id="op" >
+            <option value="">Selecione uma função</option>
+            <option value ="1">Consultar Saldo</option>
+            <option value ="2">Depositar</option>
+            <option value ="3">Sacar</option>
+            <option value ="4">Ver Extrato</option>
+        </select>
+
+        <button type="button" id="executar">Executar Operação</button>
+
+        <input id="input" type="number" min="0" max="saldo" placeholder="Ex:1000">
+
+        <p id="resultado"></p>
+
+        <script src="banco.js"></script>
+    </div>
+</body>
+</html>
