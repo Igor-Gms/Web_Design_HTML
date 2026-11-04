@@ -1,6 +1,6 @@
 const botaoMeDia = document.getElementById("media")
 const resultadoMedia = document.getElementById("resultadoMedia")
-const finalizacaoMedia = document.getElementById("dinalizacaoMedia")
+const finalizacaoMedia = document.getElementById("finalizacaoMedia")
 
 botaoMeDia.addEventListener("click", function () {
     finalizacaoMedia.textContent = ""
@@ -27,7 +27,7 @@ botaoMeDia.addEventListener("click", function () {
         if (mediaFinal < 5) {
             resultadoMedia.textContent = "Reprovado!!!"
         }
-        if (mediaFinal >= 5 && 7) {
+        if (mediaFinal >= 5 && mediaFinal <7) {
             resultadoMedia.textContent = "Recuperaçao"
         }
         if (mediaFinal >=7) {
