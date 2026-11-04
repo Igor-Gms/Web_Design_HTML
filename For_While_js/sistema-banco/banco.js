@@ -17,8 +17,14 @@ botao.addEventListener("click", function () {
             resultado.textContent = `O novo saldo é: ${conta}`;
             break
         case "3":
-            let saque = saldo -= input
-            resultado.textContent = `O novo saldo é ${saldo}`
+           if (Number.isSafeInteger(input) || input <= 0) {
+            resultado.textContent = "Digite um valor inteiro maior que zero."
             break
+           }
+           if (input > saldo) {
+            resultado.textContent = "Saldo insuficuente"
+            break;
+           }
+           
     }
 })
