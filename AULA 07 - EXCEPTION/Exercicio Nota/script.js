@@ -25,13 +25,13 @@ botaoMeDia.addEventListener("click", function () {
         const mediaFinal = somaMedia / 3;
 
         if (mediaFinal < 5) {
-            resultadoMedia.textContent = "Reprovado!!!"
+            resultadoMedia.textContent =  "Reprovado!!! -  Media Final: " + mediaFinal
         }
         if (mediaFinal >= 5 && mediaFinal <7) {
-            resultadoMedia.textContent = "Recuperaçao"
+            resultadoMedia.textContent = " Recuperação!!! - Media Final: " + mediaFinal
         }
         if (mediaFinal >=7) {
-            resultadoMedia.textContent = "Aprovado!!!"
+            resultadoMedia.textContent = "Aprovado!!! - Media Final: " + mediaFinal
         }
     }catch (error) {
         resultadoMedia.textContent = "Erro: " + error.message;
